@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website 4 Trang Mục</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">MyWebsite</div>
+                <ul class="menu">
+                    <li><a href="#home" class="active" onclick="showSection('home')">Trang Chủ</a></li>
+                    <li><a href="#about" onclick="showSection('about')">Giới Thiệu</a></li>
+                    <li><a href="#services" onclick="showSection('services')">Dịch Vụ</a></li>
+                    <li><a href="#contact" onclick="showSection('contact')">Liên Hệ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <main class="container">
+        <section id="home" class="section active">
+            <h2>Trang Chủ</h2>
+            <p>Chào mừng bạn đến với website của chúng tôi. Đây là trang web mẫu với 4 trang mục cơ bản.</p>
+            <p>Nhấn vào các liên kết trên menu để di chuyển giữa các trang.</p>
+            
+            <div class="cards">
+                <div class="card">
+                    <h3>Dịch vụ chất lượng</h3>
+                    <p>Chúng tôi cung cấp những dịch vụ tốt nhất trong ngành.</p>
+                </div>
+                <div class="card">
+                    <h3>Đội ngũ chuyên nghiệp</h3>
+                    <p>Đội ngũ chuyên gia với nhiều năm kinh nghiệm.</p>
+                </div>
+                <div class="card">
+                    <h3>Hỗ trợ 24/7</h3>
+                    <p>Luôn sẵn sàng hỗ trợ bạn mọi lúc mọi nơi.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="about" class="section">
+            <h2>Giới Thiệu</h2>
+            <p>Chúng tôi là một công ty chuyên cung cấp các dịch vụ web chất lượng cao.</p>
+            <p>Với hơn 10 năm kinh nghiệm trong ngành, chúng tôi tự hào mang đến cho khách hàng những sản phẩm và dịch vụ tốt nhất.</p>
+            <p>Tầm nhìn của chúng tôi là trở thành đối tác tin cậy và lâu dài của khách hàng, giúp họ thành công trong lĩnh vực kinh doanh trực tuyến.</p>
+            
+            <div class="cards">
+                <div class="card">
+                    <h3>Sứ mệnh</h3>
+                    <p>Cung cấp giải pháp công nghệ hiệu quả và phù hợp với nhu cầu của khách hàng.</p>
+                </div>
+                <div class="card">
+                    <h3>Giá trị cốt lõi</h3>
+                    <p>Chất lượng, sáng tạo, trung thực và tinh thần trách nhiệm cao.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="services" class="section">
+            <h2>Dịch Vụ</h2>
+            <p>Chúng tôi cung cấp nhiều dịch vụ đa dạng để đáp ứng nhu cầu của khách hàng.</p>
+            
+            <div class="cards">
+                <div class="card">
+                    <h3>Thiết kế Website</h3>
+                    <p>Tạo ra những website đẹp mắt, thân thiện với người dùng và tối ưu cho công cụ tìm kiếm.</p>
+                </div>
+                <div class="card">
+                    <h3>Phát triển Ứng dụng</h3>
+                    <p>Xây dựng ứng dụng web và di động chất lượng cao, đáp ứng nhu cầu kinh doanh.</p>
+                </div>
+                <div class="card">
+                    <h3>Marketing Online</h3>
+                    <p>Chiến lược marketing toàn diện giúp thương hiệu của bạn tiếp cận đúng khách hàng mục tiêu.</p>
+                </div>
+                <div class="card">
+                    <h3>Bảo trì & Hỗ trợ</h3>
+                    <p>Dịch vụ bảo trì và hỗ trợ liên tục để đảm bảo website của bạn luôn hoạt động tốt nhất.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="contact" class="section">
+            <h2>Liên Hệ</h2>
+            <p>Hãy liên hệ với chúng tôi nếu bạn có bất kỳ câu hỏi hoặc yêu cầu nào.</p>
+            
+            <div class="cards">
+                <div class="card">
+                    <h3>Thông tin liên hệ</h3>
+                    <p>Địa chỉ: 123 Đường ABC, Quận XYZ, TP. Hồ Chí Minh</p>
+                    <p>Email: info@mywebsite.com</p>
+                    <p>Điện thoại: 0123.456.789</p>
+                </div>
+                <div class="card">
+                    <h3>Gửi tin nhắn</h3>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Họ tên:</label>
+                            <input type="text" id="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Tin nhắn:</label>
+                            <textarea id="message" rows="5" required></textarea>
+                        </div>
+                        <button type="button" onclick="submitForm()">Gửi tin nhắn</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 MyWebsite. Tất cả quyền được bảo lưu.</p>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
